@@ -6,14 +6,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "skills")
-public class Skill {
+@Table(name = "soft_skills")
+public class SoftSkill {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,8 +19,5 @@ public class Skill {
 
     private String title;
 
-    @OneToMany
-    private Set<Course> courses;
-
-
+    private String descritpion;
 }
