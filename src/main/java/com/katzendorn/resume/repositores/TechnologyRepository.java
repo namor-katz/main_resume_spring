@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface TechnologyRepository extends JpaRepository<Technology, Long> {
 //    Technology findById(Long id);
+    Technology findTechnologiesById(Long id);
+    Technology findTechnologyByTitle(String title);
 }
